@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <title>Introduccion a JavaScript</title>
+</head>
+<body>
+    <div>
+        <img src="./assets/img/12fd49a4b67dfc07b47eaa9abab6d56b.jpg">
+        <h4> Apple MacBook Pro 14" M3</h4>
+        <h1> Precio: <span id="precio">aqui va el precio base</span> CLP</h1>
+        <p> Cantidad: <span id="cantidad"> aqui va la cantidad </span></p>
+        <button 
+            onclick="
+                cantidad = cantidad + 1;
+                document.querySelector('#cantidad').innerHTML = cantidad;
+                let total = document.querySelector('#pago');
+                pago.innerHTML = precioBase * cantidad;
+            "> + </button>
+        <button
+            onclick="
+                cantidad = cantidad - 1;
+                pago.innerHTML = precioBase * cantidad;
+            "> - </button>
+    </div>
+    <div>
+        <h4>Total a pagar: <span id="pago"> 0 </span> CLP </h4>
+    </div>
+    <script src="./assets/js/script.js"> </script>
+</body>
+</html>
